@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+a {color:#3C253F; text-decoration:none; }
+a:hover{text-decoration:underline;}
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    background:#fff;
+    font-family:"Times New Roman";
+}
+/*公共类*/
+.h1 {  /*1号版心 提取 */
+    width: 957px;
+    margin:0 auto;
+}
+.h2 {/*2号版心 提取 */
+	width: 960px;
+    margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/* 顶部导航 */
+.shortcut {
+	height: 26px;
+	padding: 0 10px;
+	font-size: 11px;
+	font: 11px/26px "微软雅黑";
+	border: 1px solid #878787;
+	background: -webkit-linear-gradient(#fff, #f1f1f1); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(#fff, #f1f1f1); /* Opera 11.1 - 12.0 */
+       background: -moz-linear-gradient(#fff, #f1f1f1); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#fff, #f1f1f1); /* 标准的语法（必须放在最后） */
+}
+.help-part li {
+	float: left;
+	padding: 0 7px;
+}
+.help-part .line {
+    padding:0px;
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    margin-top: 10px;
+}
+.help-part .header-shop {
+	position: relative;
+	padding-left: 24px;
+}
+.help-part .header-shop .shop {
+	position: absolute;
+	width: 15px;
+    height: 20px;
+    top: 5px;
+    left: 1px;
+	background: url(../images/dd_header_shop.gif) no-repeat;
+}
+.help-part .my-dd {
+	position: relative;
+	padding-right: 19px;
+}
+.help-part .my-dd .dang {
+	position: absolute;
+	width: 15px;
+    height: 20px;
+    top: 5px;
+    right: 1px;
+	background: url(../images/dd_arrow_down.gif) no-repeat;
+}
+.help-part .my-dd ul {
+	position: absolute;
+	background-color: #fff;
+	width: 90px;
+	border: 1px solid #878787;
+	display: none;
+}
+/* 头部链接导航 */
+.box1 { height: 63px; }
+.top-nav .logo {
+	width: 130px;
+	height: 63px;
+	float: left;
+	background: url(../images/dd_logo.gif) no-repeat bottom center;
+}
+.all-nav {
+	width: 452px;
+	height: 27px;
+	line-height: 27px;
+	margin: 35px 0 0 5px;
+	border: 1px solid #919191;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	background: -webkit-linear-gradient(#f1f1f1, #fff); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(#f1f1f1, #fff); /* Opera 11.1 - 12.0 */
+       background: -moz-linear-gradient(#f1f1f1, #fff); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#f1f1f1, #fff); /* 标准的语法（必须放在最后*/
+}
+.all-nav li{
+	float: left;
+	padding: 0 7px;
+}
+.all-nav .line {
+    padding:0px;
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    margin-top: 10px;
+}
+.store-nav {
+	height: 27px;
+	line-height: 27px;
+	margin: 35px 0 0 5px;
+	padding-right: 30px;
+}
+.store-nav li {
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+	color: #871753;
+}
+.store-nav .header-1 {
+	width: 52px;
+	background: url(../images/dd_header_1_a.jpg) no-repeat;
+}
+.store-nav .header-2 {
+	width: 39px;
+	background: url(../images/dd_header_2_a.jpg) no-repeat;
+}
+.store-nav .header-3 {
+	width: 65px;
+	height: 28px;
+	background: url(../images/dd_header_3_a.jpg) no-repeat;
+}
+.store-nav .header-top {position: relative;}
+.store-nav p {
+	position: absolute;
+	left: 6px;
+}
+.store-nav .header-top .bang {
+	position: absolute;
+	width: 29px;
+    height: 20px;
+    top: 2px;
+    right: 5px;
+	background: url(../images/dd_header_top.png) no-repeat right center;
+}
+.sec-nav {
+	height: 27px;
+	line-height: 27px;
+	background-color: #F8650A;
+	border-radius: 4px 4px 4px 4px;
+	text-align: center;
+	padding: 0 166px;
+}
+.sec-nav li{
+	float: left;
+	padding: 0 7px;
+	color: #fff;
+}
+.sec-nav li a {color: #fff;}
+.sec-nav .line {
+    padding:0px;
+    width: 1px;
+    height: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.search {
+	height: 33px;
+	font-size: 11px;
+	font: 11px/33px "微软雅黑";
+	margin-top: 2px;
+	border: 1px solid #B1B1B1;
+	border-radius: 4px 4px 4px 4px;
+	background: -webkit-linear-gradient(#fff, #f1f1f1); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(#fff, #f1f1f1); /* Opera 11.1 - 12.0 */
+       background: -moz-linear-gradient(#fff, #f1f1f1); /* Firefox 3.6 - 15 */
+            background: linear-gradient(#fff, #f1f1f1); /* 标准的语法（必须放在最后） */
+}
+.search .blank {
+	width: 305px;
+	height: 35px;
+	padding: 0 10px 0 26px;
+}
+.blank input {
+	margin: 0 10px 1px 0;
+	height: 22px;
+	width: 194px;
+	border: 1px solid #B1B1B1;
+}
+.blank a {
+	display: inline-block;
+	width: 95px;
+	height: 21px;
+	vertical-align: middle;
+	background: url(../images/dd_header_search_btn.jpg) no-repeat;
+}
+.search li{
+	float: left;
+	padding: 0 10px;
+}
+.search .line {
+    padding:0px;
+    width: 1px;
+    height: 8px;
+    background-color: #000;
+    margin-top: 13px;
+}
+.search .super-search {
+	background: url(../images/dd_arrow_right.gif) no-repeat 3px center;
+}
+.search .ielts {
+	padding-left: 94px;
+	background: url(../images/dd_header_search_top.jpg) no-repeat 10px center;
+}
+.banner {
+	margin: 13px 0 20px 0;
+	height: 65px;
+	background: url(../images/dd_index_top_adver.jpg) no-repeat center;
+}
+
+/* 底部 */
+.dd-bottom ul {
+	width: 376px;
+	margin: 0 auto;
+}
+.dd-bottom li {
+	float: left;
+	padding: 12px 12px 0 12px;
+}
+.dd-bottom a {color: #881C0E;text-decoration:none;}
+.dd-bottom .line {
+    padding: 0px;
+    width: 1px;
+    height: 8px;
+    background-color: #860D8D;
+    margin-top: 17px;
+}
+.dd-bottom .copyright {
+	width: 569px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.copyright p {
+	display: inline-block;
+}
+.copyright i {
+	position: relative;
+	top: 15px;
+	width: 40px;
+	height: 45px;
+	display: inline-block;
+	background: url(../images/validate.gif) no-repeat center;
+}
